@@ -1,0 +1,65 @@
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, rgb(120, 176, 183), rgb(145, 109, 186), rgb(140, 213, 138));
+            background-size: 300% 300%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        :root {
+            --title-font: 55px;
+            --para-size: 25px;
+        }
+
+        .info-container {
+            width: 100%;
+            text-align: center;
+        }
+
+        .info-container h1 {
+            font-size: var(--title-font);
+        }
+
+        .info-container p {
+            font-size: var(--para-size);
+            margin-top: 15px;
+        }
+
+        .feature-container {
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            gap: 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .feature-container .feature-box {
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+            border: 1px solid gray;
+        }
+        .feature-container .feature-box h3{
+            margin-block: 10px;
+        }
