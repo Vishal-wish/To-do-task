@@ -29,23 +29,24 @@
         :root {
             --title-font: 55px;
             --para-size: 25px;
+            --small-size: 18px
         }
 
-        .info-container {
+        #info-container {
             width: 100%;
             text-align: center;
         }
 
-        .info-container h1 {
+        #info-container h1 {
             font-size: var(--title-font);
         }
 
-        .info-container p {
+        #info-container p {
             font-size: var(--para-size);
             margin-top: 15px;
         }
 
-        .feature-container {
+        #feature-container {
             width: 80%;
             margin: 50px auto;
             display: grid;
@@ -53,13 +54,78 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
 
-        .feature-container .feature-box {
+        #feature-container #feature-box {
+            cursor: pointer;
             padding: 10px;
             text-align: center;
             border-radius: 10px;
             background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
             border: 1px solid gray;
         }
-        .feature-container .feature-box h3{
+
+        #feature-container #feature-box h3 {
+            font-size: var(--para-size);
+            font-weight: 600;
             margin-block: 10px;
+        }
+
+        #feature-container #feature-box p {
+            font-size: var(--small-size);
+        }
+
+        #to-do-container {
+            width: 100%;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #to-do-container #user_input {
+            width: 75%;
+            padding: 5px;
+            border-radius: 8px;
+            font-size: var(--para-size);
+        }
+
+        #to-do-container #add_btn {
+            padding: 5px;
+            border-radius: 8px;
+            background-image: radial-gradient(circle 851px at 79.7% -27.8%, rgba(153, 230, 77, 1) 6.9%, rgba(204, 255, 153, 1) 44.7%, rgba(102, 178, 51, 1) 75.4%, rgba(51, 102, 26, 1) 95.3%);
+            font-size: var(--para-size);
+        }
+
+        #to-do-list {
+            display: flex;
+            width: 85%;
+            margin: auto;
+        }
+
+        #to-do-list #order_list {
+            width: 100%;
+        }
+
+        #to-do-list #order_list li {
+            width: 100%;
+            padding: 3px;
+            border: 1px solid black;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: #000000d4;
+            color: white;
+            font-size: var(--small-size);
+        }
+
+        #to-do-list #buttons {
+            width: 10%;
+        }
+
+        #to-do-list #buttons button {
+            width: 100%;
+            padding: 3px;
+            border: 1px solid black;
+            margin-top: 5px;
+            border-radius: 5px;
+            font-size: var(--small-size);
         }

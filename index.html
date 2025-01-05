@@ -10,20 +10,34 @@
 
 <body>
 
-    <div class="info-container">
+    <div id="info-container">
         <h1>TO DO LIST</h1>
         <p> A to-do list is a list of tasks that need to be completed, usually organized by priority. </p>
     </div>
-    <div class="feature-container">
-        <div class="feature-box">
+    <div id="feature-container">
+        <div id="feature-box">
+            <h3>Time management</h3>
+            <p>To create a productive to-do list, it can be helpful to know your schedule, choose a suitable format, consider daily activities as tasks, list tasks starting with an action verb, order them by priority and regularly check off completed tasks.</p>
+        </div>
+        <div id="feature-box">
+            <h3>Task management</h3>
+            <p>Todoist is a popular task management and to-do list app used by 30 million people and teams. It helps users stay focused, organized, and calm by allowing them to break tasks into simple steps, set due dates, and create reminders to keep on track.</p>
+        </div>
+        <div id="feature-box">
             <h3>Microproductivity</h3>
             <p>This approach allows individuals to efficiently tick off items from their to-do lists, making the overall workload feel less daunting and reducing procrastination. It focuses on accomplishing small but significant tasks quickly, which can lead to a sense of achievement and increased motivation.</p>
         </div>
-        <div class="feature-box">
-            <h3>Plan your time</h3>
-            <p>To create a productive to-do list, it can be helpful to know your schedule, choose a suitable format, consider daily activities as tasks, list tasks starting with an action verb, order them by priority and regularly check off completed tasks.</p>
-        </div>
     </div>
+
+    <div id="to-do-container">
+        <input type="text" value="" id="user_input">
+        <button id="add_btn">Add List</button>
+    </div>
+    <div id="to-do-list">
+        <ol id="order_list"></ol>
+        <div id="buttons"></div>
+    </div>
+    <script src="/index.js"></script>
 
 </body>
 
