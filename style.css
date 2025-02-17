@@ -122,11 +122,21 @@
         }
 
         #to-do-list #buttons button {
-            width: 40%;
+            min-width: 3%;
             margin-inline: 1px;
-            padding: 3px;
+            padding-block: 3px;
+            padding-inline: 5px;
             border: 1px solid black;
             margin-top: 5px;
             border-radius: 5px;
             font-size: var(--small-size);
         }
+    .remove_all{
+        display: none;
+    }
+    .remove_all.active{
+        display: block;
+        padding: 3px 5px;
+        background-color: white;
+        color: black;
+    }
